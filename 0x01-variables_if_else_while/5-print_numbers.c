@@ -9,12 +9,12 @@
  */
 	int main(void)
 {
-	int i;
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	for (i = '0'; i <= '9'; ++i)
-		putchar(i);
-	putcahr(0);
+	for (n = '0'; n <= '9'; ++n)
+		putchar(n);
+	putchar('\n');
 	return (0);
 }
