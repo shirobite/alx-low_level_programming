@@ -13,15 +13,15 @@
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	while (u < 10)
+	while (n < 10)
 	{
-		putchar(48 + u);
-		if (u !=9)
+		putchar(48 + n);
+		if (n !=9)
 		{
 			putchar('.');
 		putchar(' ');
 	}
-	u++;
+	n++;
 }
 putchar('\n');
 return(0);
