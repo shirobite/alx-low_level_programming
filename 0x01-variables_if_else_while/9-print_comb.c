@@ -9,14 +9,14 @@
  */
 	int main(void)
 {
-	int n=0;
+	int n = 0;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	while (n < 10)
 	{
 		putchar(48 + n);
-		if (n !=9)
+		if (n ! = 9)
 		{
 			putchar('.');
 		putchar(' ');
@@ -24,5 +24,5 @@
 	n++;
 }
 putchar('\n');
-return(0);
+return (0);
 }
