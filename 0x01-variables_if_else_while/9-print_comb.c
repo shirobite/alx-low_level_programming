@@ -9,20 +9,17 @@
  */
 	int main(void)
 {
-	int n = 0;
+	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	while (n < 10)
+	for (n = 48; n <= 57; n++)
 	{
-		putchar(48 + n);
-		if (n != 9)
-		{
+		putchar(n);
+	if (n == 57)
+	{
+		break;
+	}
 		putchar(',');
 		putchar(' ');
-	}
-	n++;
-}
-putchar('\n');
-return (0);
 }
