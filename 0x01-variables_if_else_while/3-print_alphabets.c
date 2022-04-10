@@ -7,9 +7,9 @@
  * Description: print the lowercase alphabet
  * Return: 0
  */
- int main(void)
+int main(void)
 {
- 	int n;
+	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	for (n = 0; n < 26; ++n)
