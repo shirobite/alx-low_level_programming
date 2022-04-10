@@ -22,4 +22,5 @@
 	}
 		putchar(',');
 		putchar(' ');
+	}
 }
