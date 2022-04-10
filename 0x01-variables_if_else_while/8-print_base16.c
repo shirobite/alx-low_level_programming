@@ -13,8 +13,10 @@
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	for (u = 'a'; u <= 'f'; ++u)
-		putchar(u);
+	for (n = '0'; n <= '9'; ++n)
+		putchar(n);
+	for (n = 'a'; n <= 'f'; ++n)
+		putchar(n);
 	putchar('\n');
 	return (0);
 }
