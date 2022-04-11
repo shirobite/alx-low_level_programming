@@ -15,7 +15,7 @@
 	n = rand() - RAND_MAX / 2;
 	for (n = 48; n <= 57; n++)
 	{
-		putchar(n);
+	putchar(n);
 	if (n == 57)
 	{
 		break;
@@ -23,4 +23,6 @@
 		putchar(',');
 		putchar(' ');
 	}
+	putchar('\n');
+	return(0);
 }
