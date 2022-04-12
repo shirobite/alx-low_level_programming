@@ -8,7 +8,14 @@
  */
  int main(void)
 {
-	putchar("_putchar\n");
+	char print[] = "_putchar";
+	int i;
+	for(i = 0,i < 8,i++)
+	{
+	putchar(print[i]);
+	}
+	putchar('\n');
+		return (0);
 }
 
 
