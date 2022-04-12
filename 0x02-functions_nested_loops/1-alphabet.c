@@ -1,20 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <main.h>
 /**
  * main - check the code
  *
  * Return: Always 0
  */
- int main(void)
+ void print_alphabet(void)
  {
- 	int i;
- 	char print_alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-	for (i = 0;i < 28; i++)
-	{
-	putchar(print_alphabet[i]);
-	}
+ 	char i;
+ 	
+	for (i = 'a';i <= 'z'; i++)
+	putchar(i);
 	putchar('\n');
-	return (0);
 	}
