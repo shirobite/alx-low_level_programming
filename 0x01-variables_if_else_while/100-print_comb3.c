@@ -1,11 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main - 10-print_comb3 
+ *main - entry point
  *
- * Description: print a combination of digits 
- * Return: 0
+ *Return:(0 -success)
+ *
  */
 int main(void)
 {
