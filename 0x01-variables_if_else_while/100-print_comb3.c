@@ -11,13 +11,23 @@ int main(void)
 {
 	int a;
 	int b;
-	for(a = '0'; a <= '5'; a++)
+	for(a = 0; a <= 9; a++)
 	{
-		for(b = '0'; b <= '9'; b++)
+		for(b = 0; b <= 9; b++)
+		{
+			if (!(i == j) && i < j)
+			{
+				putchar(i + '0');
+				putchar(j + '0');
+				if (!(i == 8 && j == 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-	putchar(a);
-	putchar(b);
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
 
