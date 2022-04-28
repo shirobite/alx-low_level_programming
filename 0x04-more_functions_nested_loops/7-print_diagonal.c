@@ -1,25 +1,34 @@
-#include <main.h>
+#include "holberton.h"
+
 /**
- * print_diagonal - print diagonal line
- * @n: take intialization
+ * print_diagonal - Draws a diagonal line according to parameter
+ *
+ * @n: The of time to print diagonal lines
+ *
  * Return: void
- **/
+ */
+
 void print_diagonal(int n)
 {
-	int i ,b;
+	int a, b;
 
-	for (b = 0,b < 1, b++)
+	if (n <= 0)
 	{
-	for (i = 0,i <= n, i++)
+		_putchar('\n');
+	}
+	else
 	{
-		if (n < 0)
+		for (a = 0; a < n; a++)
 		{
-			_putchar("\n");
-		}
-		else
-		{
-			_putchar(32);
-		}}
+			for (b = 0; b < a; b++)
+			{
+				_putchar(32);
+
+			}
+
 			_putchar(92);
-	}}
+			_putchar('\n');
+		}
+	}
+}
 
