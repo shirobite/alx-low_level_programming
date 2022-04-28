@@ -1,12 +1,16 @@
-#include <main.h>
+#include "main.h"
+
 /**
- * print_square : print square
- * @size: take the size
+ * print_square - Prints n square according n number of times
+ *
+ * @size: The number of squares/number of times
+ *
  * Return: void
  */
+
 void print_square(int size)
 {
-	int i, b;
+	int a, b;
 
 	if (size <= 0)
 	{
@@ -14,14 +18,15 @@ void print_square(int size)
 	}
 	else
 	{
-		for (i = 0; i < size; i++)
+		for (a = 0; a < size; a++)
 		{
 			for (b = 0; b < size; b++)
 			{
 				_putchar(35);
 			}
-			
+
 			_putchar('\n');
 		}
 	}
+
 }
