@@ -1,10 +1,11 @@
 #include <main.h>
 #include <stdio.h>
+
 /**
- * main: print numbers from 1 to 100
+ * main - print numbers from 1 to 100
  * 
  * Return: 0
- **/
+ */
 int main(void)
 {
 	int i;
