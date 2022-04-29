@@ -1,40 +1,43 @@
-#include <main.h>
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - print numbers from 1 to 100
- * 
- * Return: 0
+ * main - Prints a Fizz Buzz program
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
+	int a;
 
-	for (i = 1; i <= 100; i++)
+	for (a = 1; a <= 100; a++)
 	{
-		if ((i % 3 == 0) && (i % 5 == 0))
+		if ((a % 3 == 0) && (a % 5 == 0))
 		{
 			printf("FizzBuzz");
-
 		}
-		else if (i % 3 == 0)
+		else if (a % 3 == 0)
 		{
 			printf("Fizz");
 		}
-		else if (i % 5 == 0)
+		else if (a % 5 == 0)
 		{
 			printf("Buzz");
 		}
 		else
 		{
-			printf("%d", i);
+			printf("%d", a);
 		}
-		if (i != 100)
+
+		if (a != 100)
 		{
 			printf(" ");
 		}
 	}
-	print("\n");
+
+	printf("\n");
+
 	return (0);
 }
 
