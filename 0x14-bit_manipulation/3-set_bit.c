@@ -1,20 +1,16 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * set_bit - function that sets the value of a bit to 1 at a given index
- *
- * @n: number to index
- * @index: indext to binary
- *
- * Return: 1 if success, -1 if not
+ * set_bit - sets the value of a bit to 1 at a given index
+ * @n: parameter
+ * @index: index
+ * Return: value
  */
-
 int set_bit(unsigned long int *n, unsigned int index)
 {
-unsigned long int x = 1;
-
-if (index > 32 || n == '\0')
-return (-1);
-*n = *n | x << index;
-return (1);
+	if (index > sizeof(n) * 8)
+		return (-1);
+	*n |= (1 << index);
+	return (1);
 }
